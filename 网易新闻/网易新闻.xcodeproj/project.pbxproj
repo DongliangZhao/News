@@ -12,6 +12,11 @@
 		041106151BC6C11C005EE3E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041106141BC6C11C005EE3E7 /* Images.xcassets */; };
 		041106181BC6C11C005EE3E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041106161BC6C11C005EE3E7 /* LaunchScreen.xib */; };
 		041106241BC6C11C005EE3E7 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041106231BC6C11C005EE3E7 /* ____Tests.m */; };
+		04D8AD1B1BE0DDC500CCAEAA /* NewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D8AD1A1BE0DDC500CCAEAA /* NewTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04D8AD1E1BE0DEEE00CCAEAA /* NetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D8AD1D1BE0DEEE00CCAEAA /* NetworkTools.m */; settings = {ASSET_TAGS = (); }; };
+		04D8AD201BE0DF0400CCAEAA /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D8AD1F1BE0DF0400CCAEAA /* News.storyboard */; settings = {ASSET_TAGS = (); }; };
+		04D8AD241BE0DF2900CCAEAA /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D8AD231BE0DF2900CCAEAA /* NSArray+Log.m */; settings = {ASSET_TAGS = (); }; };
+		04D8AD271BE0E2FC00CCAEAA /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D8AD261BE0E2FC00CCAEAA /* News.m */; settings = {ASSET_TAGS = (); }; };
 		8A5644E6F762F9558CFAAAAE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFE44F6F2E80EF2F3717E71 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +41,15 @@
 		0411061D1BC6C11C005EE3E7 /* 网易新闻Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网易新闻Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041106221BC6C11C005EE3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041106231BC6C11C005EE3E7 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		04D8AD191BE0DDC500CCAEAA /* NewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTableViewController.h; sourceTree = "<group>"; };
+		04D8AD1A1BE0DDC500CCAEAA /* NewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTableViewController.m; sourceTree = "<group>"; };
+		04D8AD1C1BE0DEEE00CCAEAA /* NetworkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTools.h; sourceTree = "<group>"; };
+		04D8AD1D1BE0DEEE00CCAEAA /* NetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTools.m; sourceTree = "<group>"; };
+		04D8AD1F1BE0DF0400CCAEAA /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		04D8AD221BE0DF2900CCAEAA /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		04D8AD231BE0DF2900CCAEAA /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		04D8AD251BE0E2FC00CCAEAA /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		04D8AD261BE0E2FC00CCAEAA /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		B5E3BD937A76880848DB3256 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D8774D26CB3A8AEC2F0783E3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DDFE44F6F2E80EF2F3717E71 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +145,11 @@
 		04D8AD171BE0DC5A00CCAEAA /* News */ = {
 			isa = PBXGroup;
 			children = (
+				04D8AD191BE0DDC500CCAEAA /* NewTableViewController.h */,
+				04D8AD1A1BE0DDC500CCAEAA /* NewTableViewController.m */,
+				04D8AD1F1BE0DF0400CCAEAA /* News.storyboard */,
+				04D8AD251BE0E2FC00CCAEAA /* News.h */,
+				04D8AD261BE0E2FC00CCAEAA /* News.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -138,8 +157,20 @@
 		04D8AD181BE0DC5A00CCAEAA /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				04D8AD211BE0DF2900CCAEAA /* Log */,
+				04D8AD1C1BE0DEEE00CCAEAA /* NetworkTools.h */,
+				04D8AD1D1BE0DEEE00CCAEAA /* NetworkTools.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		04D8AD211BE0DF2900CCAEAA /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				04D8AD221BE0DF2900CCAEAA /* NSArray+Log.h */,
+				04D8AD231BE0DF2900CCAEAA /* NSArray+Log.m */,
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 		5922050FC746BFC3C29F774E /* Frameworks */ = {
@@ -242,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				041106181BC6C11C005EE3E7 /* LaunchScreen.xib in Resources */,
+				04D8AD201BE0DF0400CCAEAA /* News.storyboard in Resources */,
 				041106151BC6C11C005EE3E7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D8AD241BE0DF2900CCAEAA /* NSArray+Log.m in Sources */,
+				04D8AD1E1BE0DEEE00CCAEAA /* NetworkTools.m in Sources */,
+				04D8AD271BE0E2FC00CCAEAA /* News.m in Sources */,
+				04D8AD1B1BE0DDC500CCAEAA /* NewTableViewController.m in Sources */,
 				0411060D1BC6C11C005EE3E7 /* AppDelegate.m in Sources */,
 				0411060A1BC6C11C005EE3E7 /* main.m in Sources */,
 			);
