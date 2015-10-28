@@ -23,6 +23,7 @@
     return  self;
     
 }
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {}
 
 + (instancetype) newsWithDict:(NSDictionary *)dict
 {
@@ -32,7 +33,7 @@
 
 - (NSString *)description {
     
-    NSArray *propertis = @[@"title", @"digest", @"replyCount", @"imgsrc"];
+    NSArray *propertis = @[@"title", @"digest", @"replyCount", @"imagesrc"];
     NSDictionary *dict = [self dictionaryWithValuesForKeys:propertis];
     
     return [NSString stringWithFormat:@"<%@: %p> %@", self.class, self, dict];
@@ -43,15 +44,25 @@
 + (void)loadNewsListiWithURLString:(NSString *)urlString {
 
     [[NetworkTools sharedNetworkTools] GET:urlString parameters:nil success:^(NSURLSessionDataTask * task, NSDictionary *responseObject) {
-        
+
         NSLog(@"%@", responseObject.keyEnumerator.nextObject);
         
+        NSArray *array = responseObject[responseObject.keyEnumerator.nextObject];
+
+        
+        // 字典转模型
+        NSMutableArray *arrM = [NSMutableArray arrayWithCapacity:array.count];
+        
+        for (NSDictionary *dict in array) {
+            [arrM addObject:[self newsWithDict:dict]];
+        }
+        
+        NSLog(@"%@", arrM);
         
     } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
-        
+        NSLog(@"%@", error);
     }];
     
-
 
 }
 
